@@ -32,7 +32,9 @@ export const ParticipantsCount = React.memo(
     const { t } = useTranslation('rooms', {
       keyPrefix: 'controls.participants',
     })
-    const remoteParticipants = useRemoteParticipants()
+    const remoteParticipants = useRemoteParticipants({
+      updateOnlyOn: [],
+    })
     const count = (remoteParticipants?.length ?? 0) + 1
 
     return (
