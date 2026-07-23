@@ -9,7 +9,6 @@ import {
   VideoTrack,
   TrackRefContext,
   ParticipantContextIfNeeded,
-  useIsSpeaking,
 } from '@livekit/components-react'
 import {
   isEqualTrackRef,
